@@ -6,7 +6,7 @@
 <html >
     <head>
         <meta charset="UTF-8">
-        <title>Login Form</title>
+        <title>Inscription Form</title>
         <style>
             @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
