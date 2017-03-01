@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{3065FEAC-4DFC-4A09-A471-FD641792AEE1}" Label="" LastModificationDate="1488288067" Name="Mini-Projet-Naina" Objects="50" Symbols="9" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" signature="CDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{3065FEAC-4DFC-4A09-A471-FD641792AEE1}" Label="" LastModificationDate="1488306091" Name="Mini-Projet-Naina" Objects="78" Symbols="22" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" signature="CDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>MINI_PROJET_NAINA</a:Code>
 <a:CreationDate>1488283747</a:CreationDate>
 <a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488288061</a:ModificationDate>
+<a:ModificationDate>1488306053</a:ModificationDate>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -22,7 +22,377 @@ GenerationPath=
 GenerationOptions=
 GenerationTasks=
 GenerationTargets=
-GenerationSelections=</a:PackageOptionsText>
+GenerationSelections=
+
+[FolderOptions\CheckModel]
+
+[FolderOptions\CheckModel\Package]
+
+[FolderOptions\CheckModel\Package\GenrCircularityYes]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Package\GenrCircularityNo]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Package\ShortcutUniqCode]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Package\ChildShortcut]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domaine]
+
+[FolderOptions\CheckModel\Domaine\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domaine\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domaine\CheckNumParam]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domaine\CheckPrecSupLng]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domaine\CheckUndefDttp]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domaine\CheckOtherDttp]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Information]
+
+[FolderOptions\CheckModel\Information\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Information\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Information\InfoNotUsed]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Information\InfoUsedSevTime]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Information\InfoDiffDomn]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Information\CheckNumParam]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Information\CheckPrecSupLng]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Information\CheckUndefDttp]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Information\CheckOtherDttp]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité]
+
+[FolderOptions\CheckModel\Entité\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\MaxLen - NAME]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\EnttNoAttrNo]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\EnttNbSerials]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\EnttNoAttrYes]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\EmptyCollYesYes]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\EnttSamePrnt]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\EnttMultInhr]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\EnttSevInhr]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité\PidtfInhrAtt]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité.Attribut d&#39;entité]
+
+[FolderOptions\CheckModel\Entité.Attribut d&#39;entité\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité.Attribut d&#39;entité\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité.Identifiant]
+
+[FolderOptions\CheckModel\Entité.Identifiant\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité.Identifiant\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité.Identifiant\EmptyColl - PENTCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité.Identifiant\CheckIncludeColl - Entt]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Entité.Identifiant\IdtfChildPIdtf]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Relation]
+
+[FolderOptions\CheckModel\Relation\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Relation\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Relation\RlshReflexiveDeptYes]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Relation\RlshReflexiveDeptNo]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Relation\RlshBject]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Relation\RlshMnyMny]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Relation\RlshDepdChild]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association]
+
+[FolderOptions\CheckModel\Association\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\AsscNbLink]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\AsscNbIdLink1]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\AsscNbIdLink2]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\AsscIdPass]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\AsscBject]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\AsscMaxCard]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\AsscReflex]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\AsscMnyMny]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Héritage]
+
+[FolderOptions\CheckModel\Héritage\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Héritage\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Héritage\EmptyColl - CHILDCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Réplication]
+
+[FolderOptions\CheckModel\Réplication\PartialReplication]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Règle de gestion]
+
+[FolderOptions\CheckModel\Règle de gestion\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Règle de gestion\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Règle de gestion\EmptyColl - OBJCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Objet étendu]
+
+[FolderOptions\CheckModel\Objet étendu\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Objet étendu\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lien étendu]
+
+[FolderOptions\CheckModel\Lien étendu\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lien étendu\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fichier]
+
+[FolderOptions\CheckModel\Fichier\UniqueNom]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fichier\CheckPathExists]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes</a:PackageOptionsText>
 <a:ModelOptionsText>[ModelOptions]
 
 [ModelOptions\Conceptual options]
@@ -400,6 +770,7 @@ IndxThreshold=
 ClassPrefix=
 ColnFKName=%.3:PARENT%_%COLUMN%
 ColnFKNameUse=No
+PreserveMode=Yes
 
 [ModelOptions\Generate\Oom]
 CheckModel=Yes
@@ -417,7 +788,7 @@ NameToCode=No</a:ModelOptionsText>
 <a:Code>DIAGRAMME_1</a:Code>
 <a:CreationDate>1488283747</a:CreationDate>
 <a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488288061</a:ModificationDate>
+<a:ModificationDate>1488306053</a:ModificationDate>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -784,9 +1155,219 @@ Shadow=0</a:DisplayPreferences>
 <a:PageOrientation>1</a:PageOrientation>
 <a:PaperSource>15</a:PaperSource>
 <c:Symbols>
-<o:EntitySymbol Id="o4">
+<o:AssociationLinkSymbol Id="o4">
+<a:CreationDate>1488305147</a:CreationDate>
+<a:ModificationDate>1488305147</a:ModificationDate>
+<a:Rect>((32581,13724), (44993,17361))</a:Rect>
+<a:ListOfPoints>((32581,13724),(37613,13724),(37613,17361),(44993,17361))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>0</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>ROLE 0 Arial,8,N
+CARD 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:AssociationSymbol Ref="o6"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:AssociationLink Ref="o7"/>
+</c:Object>
+</o:AssociationLinkSymbol>
+<o:AssociationLinkSymbol Id="o8">
+<a:CreationDate>1488305147</a:CreationDate>
+<a:ModificationDate>1488305147</a:ModificationDate>
+<a:Rect>((44993,17361), (57406,20999))</a:Rect>
+<a:ListOfPoints>((57406,20999),(52965,20999),(52965,17361),(44993,17361))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>0</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>ROLE 0 Arial,8,N
+CARD 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o9"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:AssociationSymbol Ref="o6"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:AssociationLink Ref="o10"/>
+</c:Object>
+</o:AssociationLinkSymbol>
+<o:AssociationLinkSymbol Id="o11">
+<a:CreationDate>1488305150</a:CreationDate>
+<a:ModificationDate>1488305150</a:ModificationDate>
+<a:Rect>((33106,10453), (45218,13274))</a:Rect>
+<a:ListOfPoints>((33106,13274),(33106,11736),(45218,11736))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>0</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>ROLE 0 Arial,8,N
+CARD 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:AssociationSymbol Ref="o12"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:AssociationLink Ref="o13"/>
+</c:Object>
+</o:AssociationLinkSymbol>
+<o:AssociationLinkSymbol Id="o14">
+<a:CreationDate>1488305388</a:CreationDate>
+<a:ModificationDate>1488305388</a:ModificationDate>
+<a:Rect>((21181,-2662), (43156,-100))</a:Rect>
+<a:ListOfPoints>((21181,-1275),(30219,-1275),(30219,-2662),(43156,-2662))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>0</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>ROLE 0 Arial,8,N
+CARD 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o15"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:AssociationSymbol Ref="o16"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:AssociationLink Ref="o17"/>
+</c:Object>
+</o:AssociationLinkSymbol>
+<o:AssociationLinkSymbol Id="o18">
+<a:CreationDate>1488305388</a:CreationDate>
+<a:ModificationDate>1488305388</a:ModificationDate>
+<a:Rect>((43156,-5223), (65131,-2662))</a:Rect>
+<a:ListOfPoints>((65131,-4050),(52347,-4050),(52347,-2662),(43156,-2662))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>0</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>ROLE 0 Arial,8,N
+CARD 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o19"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:AssociationSymbol Ref="o16"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:AssociationLink Ref="o20"/>
+</c:Object>
+</o:AssociationLinkSymbol>
+<o:AssociationLinkSymbol Id="o21">
+<a:CreationDate>1488305409</a:CreationDate>
+<a:ModificationDate>1488305409</a:ModificationDate>
+<a:Rect>((18106,7950), (21668,14625))</a:Rect>
+<a:ListOfPoints>((19906,14625),(19906,11138),(18106,11138),(18106,7950))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>0</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>ROLE 0 Arial,8,N
+CARD 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:AssociationSymbol Ref="o22"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:AssociationLink Ref="o23"/>
+</c:Object>
+</o:AssociationLinkSymbol>
+<o:AssociationLinkSymbol Id="o24">
+<a:CreationDate>1488305409</a:CreationDate>
+<a:ModificationDate>1488305409</a:ModificationDate>
+<a:Rect>((14544,1275), (18106,7950))</a:Rect>
+<a:ListOfPoints>((16306,1275),(16306,4591),(18106,4591),(18106,7950))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>0</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>ROLE 0 Arial,8,N
+CARD 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o15"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:AssociationSymbol Ref="o22"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:AssociationLink Ref="o25"/>
+</c:Object>
+</o:AssociationLinkSymbol>
+<o:AssociationLinkSymbol Id="o26">
+<a:CreationDate>1488305814</a:CreationDate>
+<a:ModificationDate>1488305820</a:ModificationDate>
+<a:Rect>((11907,-7126), (13707,-451))</a:Rect>
+<a:ListOfPoints>((11907,-451),(11907,-7126))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>0</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>ROLE 0 Arial,8,N
+CARD 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o15"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:AssociationSymbol Ref="o27"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:AssociationLink Ref="o28"/>
+</c:Object>
+</o:AssociationLinkSymbol>
+<o:AssociationLinkSymbol Id="o29">
+<a:CreationDate>1488305814</a:CreationDate>
+<a:ModificationDate>1488305820</a:ModificationDate>
+<a:Rect>((10182,-14551), (12044,-7126))</a:Rect>
+<a:ListOfPoints>((11944,-14551),(11944,-7126))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>0</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>ROLE 0 Arial,8,N
+CARD 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o30"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:AssociationSymbol Ref="o27"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:AssociationLink Ref="o31"/>
+</c:Object>
+</o:AssociationLinkSymbol>
+<o:AssociationLinkSymbol Id="o32">
+<a:CreationDate>1488306053</a:CreationDate>
+<a:ModificationDate>1488306091</a:ModificationDate>
+<a:Rect>((47618,8988), (58793,11962))</a:Rect>
+<a:ListOfPoints>((58793,10162),(53135,10162),(53135,11962),(47618,11962))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>0</a:ArrowStyle>
+<a:LineColor>16744576</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>ROLE 0 Arial,8,N
+CARD 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o33"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:AssociationSymbol Ref="o12"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:AssociationLink Ref="o34"/>
+</c:Object>
+</o:AssociationLinkSymbol>
+<o:EntitySymbol Id="o35">
 <a:CreationDate>1488283822</a:CreationDate>
-<a:ModificationDate>1488284081</a:ModificationDate>
+<a:ModificationDate>1488305203</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
 <a:Rect>((-53039,20779), (-32159,27520))</a:Rect>
 <a:LineColor>11184640</a:LineColor>
@@ -802,14 +1383,14 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Entity Ref="o5"/>
+<o:Entity Ref="o36"/>
 </c:Object>
 </o:EntitySymbol>
-<o:EntitySymbol Id="o6">
+<o:EntitySymbol Id="o19">
 <a:CreationDate>1488283945</a:CreationDate>
-<a:ModificationDate>1488284083</a:ModificationDate>
+<a:ModificationDate>1488305257</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-12577,10354), (5677,17095))</a:Rect>
+<a:Rect>((56723,-5546), (74977,1195))</a:Rect>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16777136</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -823,35 +1404,14 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Entity Ref="o7"/>
+<o:Entity Ref="o37"/>
 </c:Object>
 </o:EntitySymbol>
-<o:EntitySymbol Id="o8">
+<o:EntitySymbol Id="o9">
 <a:CreationDate>1488284089</a:CreationDate>
-<a:ModificationDate>1488287916</a:ModificationDate>
+<a:ModificationDate>1488305124</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((50121,14366), (68529,20133))</a:Rect>
-<a:LineColor>11184640</a:LineColor>
-<a:FillColor>16777136</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-Attributes 0 Arial,8,N
-LABL 0 Arial,8,N
-EntityPrimaryAttribute 0 Arial,8,U
-Identifiers 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Entity Ref="o9"/>
-</c:Object>
-</o:EntitySymbol>
-<o:EntitySymbol Id="o10">
-<a:CreationDate>1488284220</a:CreationDate>
-<a:ModificationDate>1488287921</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((50139,3378), (68929,10119))</a:Rect>
+<a:Rect>((56121,16916), (75031,22683))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16777136</a:FillColor>
@@ -867,14 +1427,14 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
-<o:Entity Ref="o11"/>
+<o:Entity Ref="o38"/>
 </c:Object>
 </o:EntitySymbol>
-<o:EntitySymbol Id="o12">
+<o:EntitySymbol Id="o5">
 <a:CreationDate>1488287951</a:CreationDate>
-<a:ModificationDate>1488288067</a:ModificationDate>
+<a:ModificationDate>1488305203</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((17983,14402), (36623,19195))</a:Rect>
+<a:Rect>((16408,12827), (35048,17620))</a:Rect>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16777136</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -888,9 +1448,162 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Entity Ref="o13"/>
+<o:Entity Ref="o39"/>
 </c:Object>
 </o:EntitySymbol>
+<o:AssociationSymbol Id="o6">
+<a:CreationDate>1488305147</a:CreationDate>
+<a:ModificationDate>1488305147</a:ModificationDate>
+<a:Rect>((40179,15861), (49810,18860))</a:Rect>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Association Ref="o40"/>
+</c:Object>
+</o:AssociationSymbol>
+<o:AssociationSymbol Id="o12">
+<a:CreationDate>1488305150</a:CreationDate>
+<a:ModificationDate>1488305150</a:ModificationDate>
+<a:Rect>((40404,10236), (50035,13235))</a:Rect>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Association Ref="o41"/>
+</c:Object>
+</o:AssociationSymbol>
+<o:EntitySymbol Id="o15">
+<a:CreationDate>1488305274</a:CreationDate>
+<a:ModificationDate>1488305379</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((6315,-3035), (22097,2733))</a:Rect>
+<a:LineColor>11184640</a:LineColor>
+<a:FillColor>16777136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o42"/>
+</c:Object>
+</o:EntitySymbol>
+<o:AssociationSymbol Id="o16">
+<a:CreationDate>1488305388</a:CreationDate>
+<a:ModificationDate>1488305388</a:ModificationDate>
+<a:Rect>((38342,-4162), (47972,-1163))</a:Rect>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Association Ref="o43"/>
+</c:Object>
+</o:AssociationSymbol>
+<o:AssociationSymbol Id="o22">
+<a:CreationDate>1488305409</a:CreationDate>
+<a:ModificationDate>1488305409</a:ModificationDate>
+<a:Rect>((13292,6450), (22923,9449))</a:Rect>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Association Ref="o44"/>
+</c:Object>
+</o:AssociationSymbol>
+<o:EntitySymbol Id="o33">
+<a:CreationDate>1488305536</a:CreationDate>
+<a:ModificationDate>1488306091</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((56235,6267), (77115,13981))</a:Rect>
+<a:LineColor>11184640</a:LineColor>
+<a:FillColor>16777136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o45"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o30">
+<a:CreationDate>1488305752</a:CreationDate>
+<a:ModificationDate>1488305819</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((3241,-17601), (19409,-13602))</a:Rect>
+<a:LineColor>11184640</a:LineColor>
+<a:FillColor>16777136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N
+EntityPrimaryAttribute 0 Arial,8,U
+Identifiers 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o46"/>
+</c:Object>
+</o:EntitySymbol>
+<o:AssociationSymbol Id="o27">
+<a:CreationDate>1488305814</a:CreationDate>
+<a:ModificationDate>1488305820</a:ModificationDate>
+<a:Rect>((7074,-8626), (16705,-5627))</a:Rect>
+<a:LineColor>16744576</a:LineColor>
+<a:FillColor>16765136</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+Attributes 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Association Ref="o47"/>
+</c:Object>
+</o:AssociationSymbol>
 </c:Symbols>
 </o:ConceptualDiagram>
 </c:ConceptualDiagrams>
@@ -898,7 +1611,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:ConceptualDiagram Ref="o3"/>
 </c:DefaultDiagram>
 <c:Entities>
-<o:Entity Id="o5">
+<o:Entity Id="o36">
 <a:ObjectID>E0BBE983-775B-4802-9FF7-4F9CA3B96FFF</a:ObjectID>
 <a:Name>super_admin</a:Name>
 <a:Code>SUPER_ADMIN</a:Code>
@@ -907,279 +1620,13 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1488283981</a:ModificationDate>
 <a:Modifier>Lai Christophe</a:Modifier>
 <c:Identifiers>
-<o:Identifier Id="o14">
+<o:Identifier Id="o48">
 <a:ObjectID>8BC72F62-767C-46E7-ABED-6DEFCB107B56</a:ObjectID>
 <a:Name>Identifiant_1</a:Name>
 <a:Code>IDENTIFIANT_1</a:Code>
 <a:CreationDate>1488283823</a:CreationDate>
 <a:Creator>Lai Christophe</a:Creator>
 <a:ModificationDate>1488283939</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:Identifier.Attributes>
-<o:EntityAttribute Ref="o15"/>
-</c:Identifier.Attributes>
-</o:Identifier>
-</c:Identifiers>
-<c:PrimaryIdentifier>
-<o:Identifier Ref="o14"/>
-</c:PrimaryIdentifier>
-<c:Attributes>
-<o:EntityAttribute Id="o15">
-<a:ObjectID>710E8732-877D-4B20-803C-12D93A319252</a:ObjectID>
-<a:CreationDate>1488283823</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488283939</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
-<c:DataItem>
-<o:DataItem Ref="o16"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o17">
-<a:ObjectID>29F9A456-477A-4DBC-9687-EB2BAB7E4BCF</a:ObjectID>
-<a:CreationDate>1488283823</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488283939</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o18"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o19">
-<a:ObjectID>2838EB67-5257-47AA-833D-57D6A6853133</a:ObjectID>
-<a:CreationDate>1488283823</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488283939</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o20"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o21">
-<a:ObjectID>CB157438-2573-4E0B-8A06-DA01EC80BBBE</a:ObjectID>
-<a:CreationDate>1488283954</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488283981</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o22"/>
-</c:DataItem>
-</o:EntityAttribute>
-</c:Attributes>
-</o:Entity>
-<o:Entity Id="o7">
-<a:ObjectID>CAE17F09-D092-4F5C-8AE3-3327851C6860</a:ObjectID>
-<a:Name>client</a:Name>
-<a:Code>CLIENT</a:Code>
-<a:CreationDate>1488283945</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284069</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:Identifiers>
-<o:Identifier Id="o23">
-<a:ObjectID>B95609C4-D4F2-49CE-ADD5-534917CFA55C</a:ObjectID>
-<a:Name>Identifiant_1</a:Name>
-<a:Code>IDENTIFIANT_1</a:Code>
-<a:CreationDate>1488283983</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284069</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:Identifier.Attributes>
-<o:EntityAttribute Ref="o24"/>
-</c:Identifier.Attributes>
-</o:Identifier>
-</c:Identifiers>
-<c:PrimaryIdentifier>
-<o:Identifier Ref="o23"/>
-</c:PrimaryIdentifier>
-<c:Attributes>
-<o:EntityAttribute Id="o24">
-<a:ObjectID>1EC6AFC3-092F-4B05-8980-FEF1F1C1B106</a:ObjectID>
-<a:CreationDate>1488283983</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284069</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
-<c:DataItem>
-<o:DataItem Ref="o25"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o26">
-<a:ObjectID>611F2B6F-B43D-402C-B7EF-2D039E8C87EF</a:ObjectID>
-<a:CreationDate>1488283983</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284069</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o27"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o28">
-<a:ObjectID>1BC1E474-AD0A-4621-9B1B-332E8AF29D38</a:ObjectID>
-<a:CreationDate>1488283983</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284069</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o29"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o30">
-<a:ObjectID>D258752D-2419-4376-AF5A-3B4CE700DF53</a:ObjectID>
-<a:CreationDate>1488283983</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284069</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o31"/>
-</c:DataItem>
-</o:EntityAttribute>
-</c:Attributes>
-</o:Entity>
-<o:Entity Id="o9">
-<a:ObjectID>EA87BD1C-DB2A-47C1-87B7-1937A3FE9618</a:ObjectID>
-<a:Name>tarif_voyage</a:Name>
-<a:Code>TARIF_VOYAGE</a:Code>
-<a:CreationDate>1488284089</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284199</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:Identifiers>
-<o:Identifier Id="o32">
-<a:ObjectID>EC778C7F-36E5-4326-89DC-911956B686FF</a:ObjectID>
-<a:Name>Identifiant_1</a:Name>
-<a:Code>IDENTIFIANT_1</a:Code>
-<a:CreationDate>1488284095</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284199</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:Identifier.Attributes>
-<o:EntityAttribute Ref="o33"/>
-</c:Identifier.Attributes>
-</o:Identifier>
-</c:Identifiers>
-<c:PrimaryIdentifier>
-<o:Identifier Ref="o32"/>
-</c:PrimaryIdentifier>
-<c:Attributes>
-<o:EntityAttribute Id="o33">
-<a:ObjectID>DC603ACF-C2D9-4E46-AC45-53FB7AB7E5AC</a:ObjectID>
-<a:CreationDate>1488284095</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284199</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
-<c:DataItem>
-<o:DataItem Ref="o34"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o35">
-<a:ObjectID>998AF659-3BC9-4770-9F53-81A032AF6C53</a:ObjectID>
-<a:CreationDate>1488284095</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284199</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o36"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o37">
-<a:ObjectID>878B143A-C7A2-4E2D-88BB-1B2CE17A1DAD</a:ObjectID>
-<a:CreationDate>1488284095</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488284199</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o38"/>
-</c:DataItem>
-</o:EntityAttribute>
-</c:Attributes>
-</o:Entity>
-<o:Entity Id="o11">
-<a:ObjectID>6707616F-FDC3-4D26-BA27-E0CBC2F809F2</a:ObjectID>
-<a:Name>tarif_voiture</a:Name>
-<a:Code>TARIF_VOITURE</a:Code>
-<a:CreationDate>1488284220</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488287911</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:Identifiers>
-<o:Identifier Id="o39">
-<a:ObjectID>5EDBDA0A-0B63-4234-AEED-A34C7FDCCF78</a:ObjectID>
-<a:Name>Identifiant_1</a:Name>
-<a:Code>IDENTIFIANT_1</a:Code>
-<a:CreationDate>1488284222</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488287911</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:Identifier.Attributes>
-<o:EntityAttribute Ref="o40"/>
-</c:Identifier.Attributes>
-</o:Identifier>
-</c:Identifiers>
-<c:PrimaryIdentifier>
-<o:Identifier Ref="o39"/>
-</c:PrimaryIdentifier>
-<c:Attributes>
-<o:EntityAttribute Id="o40">
-<a:ObjectID>DF6B2CAA-25B7-44FC-9B6A-296E492FBDE5</a:ObjectID>
-<a:CreationDate>1488284222</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488287911</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
-<c:DataItem>
-<o:DataItem Ref="o41"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o42">
-<a:ObjectID>FC2296E1-B173-4287-847C-2C90C292933E</a:ObjectID>
-<a:CreationDate>1488284222</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488287911</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o43"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o44">
-<a:ObjectID>D94F540E-68B5-48F8-A2B4-5AF2E54180B3</a:ObjectID>
-<a:CreationDate>1488284222</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488287911</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o45"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o46">
-<a:ObjectID>A8F59CED-A6F3-4EB3-A260-16D4498D6D8A</a:ObjectID>
-<a:CreationDate>1488284222</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488287911</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:DataItem>
-<o:DataItem Ref="o47"/>
-</c:DataItem>
-</o:EntityAttribute>
-</c:Attributes>
-</o:Entity>
-<o:Entity Id="o13">
-<a:ObjectID>D9F1DD02-42FD-425F-9325-A987379FDB3F</a:ObjectID>
-<a:Name>pack_voyage</a:Name>
-<a:Code>PACK_VOYAGE</a:Code>
-<a:CreationDate>1488287951</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488288016</a:ModificationDate>
-<a:Modifier>Lai Christophe</a:Modifier>
-<c:Identifiers>
-<o:Identifier Id="o48">
-<a:ObjectID>78AFF150-421E-4646-BEE3-180AE89394E8</a:ObjectID>
-<a:Name>Identifiant_1</a:Name>
-<a:Code>IDENTIFIANT_1</a:Code>
-<a:CreationDate>1488287952</a:CreationDate>
-<a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488288016</a:ModificationDate>
 <a:Modifier>Lai Christophe</a:Modifier>
 <c:Identifier.Attributes>
 <o:EntityAttribute Ref="o49"/>
@@ -1191,10 +1638,10 @@ Identifiers 0 Arial,8,N</a:FontList>
 </c:PrimaryIdentifier>
 <c:Attributes>
 <o:EntityAttribute Id="o49">
-<a:ObjectID>0A8AE036-6D28-4D3F-A481-0AB2685069D8</a:ObjectID>
-<a:CreationDate>1488287952</a:CreationDate>
+<a:ObjectID>710E8732-877D-4B20-803C-12D93A319252</a:ObjectID>
+<a:CreationDate>1488283823</a:CreationDate>
 <a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488288016</a:ModificationDate>
+<a:ModificationDate>1488283939</a:ModificationDate>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
@@ -1202,20 +1649,394 @@ Identifiers 0 Arial,8,N</a:FontList>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o51">
+<a:ObjectID>29F9A456-477A-4DBC-9687-EB2BAB7E4BCF</a:ObjectID>
+<a:CreationDate>1488283823</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488283939</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o52"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o53">
+<a:ObjectID>2838EB67-5257-47AA-833D-57D6A6853133</a:ObjectID>
+<a:CreationDate>1488283823</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488283939</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o54"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o55">
+<a:ObjectID>CB157438-2573-4E0B-8A06-DA01EC80BBBE</a:ObjectID>
+<a:CreationDate>1488283954</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488283981</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o56"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o37">
+<a:ObjectID>CAE17F09-D092-4F5C-8AE3-3327851C6860</a:ObjectID>
+<a:Name>client</a:Name>
+<a:Code>CLIENT</a:Code>
+<a:CreationDate>1488283945</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284069</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o57">
+<a:ObjectID>B95609C4-D4F2-49CE-ADD5-534917CFA55C</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1488283983</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284069</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o58"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o57"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o58">
+<a:ObjectID>1EC6AFC3-092F-4B05-8980-FEF1F1C1B106</a:ObjectID>
+<a:CreationDate>1488283983</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284069</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o59"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o60">
+<a:ObjectID>611F2B6F-B43D-402C-B7EF-2D039E8C87EF</a:ObjectID>
+<a:CreationDate>1488283983</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284069</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o61"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o62">
+<a:ObjectID>1BC1E474-AD0A-4621-9B1B-332E8AF29D38</a:ObjectID>
+<a:CreationDate>1488283983</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284069</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o63"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o64">
+<a:ObjectID>D258752D-2419-4376-AF5A-3B4CE700DF53</a:ObjectID>
+<a:CreationDate>1488283983</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284069</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o65"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o38">
+<a:ObjectID>EA87BD1C-DB2A-47C1-87B7-1937A3FE9618</a:ObjectID>
+<a:Name>tarif_voyage</a:Name>
+<a:Code>TARIF_VOYAGE</a:Code>
+<a:CreationDate>1488284089</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284199</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o66">
+<a:ObjectID>EC778C7F-36E5-4326-89DC-911956B686FF</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1488284095</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284199</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o67"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o66"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o67">
+<a:ObjectID>DC603ACF-C2D9-4E46-AC45-53FB7AB7E5AC</a:ObjectID>
+<a:CreationDate>1488284095</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284199</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o68"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o69">
+<a:ObjectID>998AF659-3BC9-4770-9F53-81A032AF6C53</a:ObjectID>
+<a:CreationDate>1488284095</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284199</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o70"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o71">
+<a:ObjectID>878B143A-C7A2-4E2D-88BB-1B2CE17A1DAD</a:ObjectID>
+<a:CreationDate>1488284095</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488284199</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o72"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o39">
+<a:ObjectID>D9F1DD02-42FD-425F-9325-A987379FDB3F</a:ObjectID>
+<a:Name>pack_voyage</a:Name>
+<a:Code>PACK_VOYAGE</a:Code>
+<a:CreationDate>1488287951</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305181</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o73">
+<a:ObjectID>78AFF150-421E-4646-BEE3-180AE89394E8</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1488287952</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488288016</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o74"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o73"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o74">
+<a:ObjectID>0A8AE036-6D28-4D3F-A481-0AB2685069D8</a:ObjectID>
+<a:CreationDate>1488287952</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488288016</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o75"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o76">
 <a:ObjectID>DCA9DF2B-D04C-46D9-8C00-41E25A3DB1AE</a:ObjectID>
 <a:CreationDate>1488287952</a:CreationDate>
 <a:Creator>Lai Christophe</a:Creator>
 <a:ModificationDate>1488288016</a:ModificationDate>
 <a:Modifier>Lai Christophe</a:Modifier>
 <c:DataItem>
-<o:DataItem Ref="o52"/>
+<o:DataItem Ref="o77"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o42">
+<a:ObjectID>5F2370D9-7EE0-4E9B-8891-E5CF69B00B75</a:ObjectID>
+<a:Name>voyage</a:Name>
+<a:Code>VOYAGE</a:Code>
+<a:CreationDate>1488305274</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305424</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o78">
+<a:ObjectID>42E62558-BCD0-4AAB-9B09-83E41993312C</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1488305275</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305373</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o79"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o78"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o79">
+<a:ObjectID>AA588FF8-ECD1-49F4-B557-C539202A3B8E</a:ObjectID>
+<a:CreationDate>1488305275</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305373</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o80"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o81">
+<a:ObjectID>1510DB7E-5A3F-40CC-AAB2-EECC0057BF64</a:ObjectID>
+<a:CreationDate>1488305275</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305373</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o82"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o83">
+<a:ObjectID>8B9E0D9B-AEC9-44C1-BD5A-659A59B94BC9</a:ObjectID>
+<a:CreationDate>1488305275</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305373</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o84"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o45">
+<a:ObjectID>93E96BD8-D9AD-4ED5-958C-08A856C6C16B</a:ObjectID>
+<a:Name>voiture</a:Name>
+<a:Code>VOITURE</a:Code>
+<a:CreationDate>1488305536</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488306011</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o85">
+<a:ObjectID>C565EA19-2EAF-4539-B1EE-3F3B9F167652</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1488305540</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305633</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o86"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o85"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o86">
+<a:ObjectID>DC45E406-52AD-45BB-99F1-82930939D5EB</a:ObjectID>
+<a:CreationDate>1488305540</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305633</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o87"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o88">
+<a:ObjectID>6E70B72F-3403-4717-B9C7-AFD9B8949A49</a:ObjectID>
+<a:CreationDate>1488305540</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305633</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o89"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o90">
+<a:ObjectID>E178C2B4-B5C9-46D4-94AD-EA76A09A4052</a:ObjectID>
+<a:CreationDate>1488305540</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305633</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o91"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o92">
+<a:ObjectID>C889C0DE-2F76-4F58-AC5A-AD7B5D05F797</a:ObjectID>
+<a:CreationDate>1488305885</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305911</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o93"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o94">
+<a:ObjectID>5C69CB5E-883E-4C77-A5BA-17EA832ED015</a:ObjectID>
+<a:CreationDate>1488305949</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305981</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:DataItem>
+<o:DataItem Ref="o95"/>
+</c:DataItem>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o46">
+<a:ObjectID>A506FD59-D981-415C-888A-9F9B86E35876</a:ObjectID>
+<a:Name>voyage_confirmer</a:Name>
+<a:Code>VOYAGE_CONFIRMER</a:Code>
+<a:CreationDate>1488305752</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305827</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o96">
+<a:ObjectID>8619677B-F8E9-42B8-8A10-EF8AF0CFD0E4</a:ObjectID>
+<a:Name>Identifiant_1</a:Name>
+<a:Code>IDENTIFIANT_1</a:Code>
+<a:CreationDate>1488305753</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305798</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o97"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o96"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o97">
+<a:ObjectID>BB2A2BFE-733D-446B-8E5D-14B690211B60</a:ObjectID>
+<a:CreationDate>1488305753</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305798</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o98"/>
 </c:DataItem>
 </o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
 </c:Entities>
 <c:DataItems>
-<o:DataItem Id="o16">
+<o:DataItem Id="o50">
 <a:ObjectID>07FAD233-188F-480B-BA3A-2573DB94BF4B</a:ObjectID>
 <a:Name>idsuperadmin</a:Name>
 <a:Code>IDSUPERADMIN</a:Code>
@@ -1225,7 +2046,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:DataType>NO</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o18">
+<o:DataItem Id="o52">
 <a:ObjectID>E14E1699-46D1-4A76-8A6B-967FB7CB710B</a:ObjectID>
 <a:Name>loginsuperadmin</a:Name>
 <a:Code>LOGINSUPERADMIN</a:Code>
@@ -1236,7 +2057,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:DataType>VA30</a:DataType>
 <a:Length>30</a:Length>
 </o:DataItem>
-<o:DataItem Id="o20">
+<o:DataItem Id="o54">
 <a:ObjectID>ADCBE02D-52EF-43DC-B333-A8A640D07DE7</a:ObjectID>
 <a:Name>passsuperadmin</a:Name>
 <a:Code>PASSSUPERADMIN</a:Code>
@@ -1247,7 +2068,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:DataType>VA30</a:DataType>
 <a:Length>30</a:Length>
 </o:DataItem>
-<o:DataItem Id="o22">
+<o:DataItem Id="o56">
 <a:ObjectID>73F575E4-E1E5-44B6-B044-AF2FF0A5A9DA</a:ObjectID>
 <a:Name>niveauaccreditation</a:Name>
 <a:Code>NIVEAUACCREDITATION</a:Code>
@@ -1257,7 +2078,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:DataType>SI</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o25">
+<o:DataItem Id="o59">
 <a:ObjectID>9EC7E438-8670-4BEF-B8B0-192594CFA445</a:ObjectID>
 <a:Name>idclient</a:Name>
 <a:Code>IDCLIENT</a:Code>
@@ -1267,7 +2088,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:DataType>NO</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o27">
+<o:DataItem Id="o61">
 <a:ObjectID>33DD94C9-E0AE-404F-8C40-65F38A6700E2</a:ObjectID>
 <a:Name>nomclient</a:Name>
 <a:Code>NOMCLIENT</a:Code>
@@ -1278,7 +2099,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:DataType>VA50</a:DataType>
 <a:Length>50</a:Length>
 </o:DataItem>
-<o:DataItem Id="o29">
+<o:DataItem Id="o63">
 <a:ObjectID>348D2201-A3DF-41B7-9FA5-C99D2329D432</a:ObjectID>
 <a:Name>emailclient</a:Name>
 <a:Code>EMAILCLIENT</a:Code>
@@ -1289,7 +2110,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:DataType>VA50</a:DataType>
 <a:Length>50</a:Length>
 </o:DataItem>
-<o:DataItem Id="o31">
+<o:DataItem Id="o65">
 <a:ObjectID>377C4BB8-22E4-4C51-8F50-D10E7DC2231D</a:ObjectID>
 <a:Name>passclient</a:Name>
 <a:Code>PASSCLIENT</a:Code>
@@ -1300,7 +2121,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:DataType>VA255</a:DataType>
 <a:Length>255</a:Length>
 </o:DataItem>
-<o:DataItem Id="o34">
+<o:DataItem Id="o68">
 <a:ObjectID>9C825DA7-6581-41BC-A6A7-B011040763AA</a:ObjectID>
 <a:Name>idtarifvoyage</a:Name>
 <a:Code>IDTARIFVOYAGE</a:Code>
@@ -1310,7 +2131,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:DataType>NO</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o36">
+<o:DataItem Id="o70">
 <a:ObjectID>D1B40130-E89F-498E-8FD7-BEDE3552329B</a:ObjectID>
 <a:Name>trajetvoyage</a:Name>
 <a:Code>TRAJETVOYAGE</a:Code>
@@ -1321,7 +2142,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:DataType>VA50</a:DataType>
 <a:Length>50</a:Length>
 </o:DataItem>
-<o:DataItem Id="o38">
+<o:DataItem Id="o72">
 <a:ObjectID>F6A49FAE-9A93-4543-951A-AD7AC320E8E4</a:ObjectID>
 <a:Name>prixvoyage</a:Name>
 <a:Code>PRIXVOYAGE</a:Code>
@@ -1332,7 +2153,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:DataType>MN9</a:DataType>
 <a:Length>9</a:Length>
 </o:DataItem>
-<o:DataItem Id="o41">
+<o:DataItem Id="o99">
 <a:ObjectID>A0E9C42F-D839-4F86-9D66-5619E904AB32</a:ObjectID>
 <a:Name>idtarifvoiture</a:Name>
 <a:Code>IDTARIFVOITURE</a:Code>
@@ -1342,39 +2163,39 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:DataType>NO</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o43">
+<o:DataItem Id="o95">
 <a:ObjectID>1CE07A55-2243-4D24-9445-A12AD4162468</a:ObjectID>
 <a:Name>modelvoiture</a:Name>
 <a:Code>MODELVOITURE</a:Code>
 <a:CreationDate>1488284222</a:CreationDate>
 <a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488287911</a:ModificationDate>
+<a:ModificationDate>1488305981</a:ModificationDate>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:DataType>VA50</a:DataType>
 <a:Length>50</a:Length>
 </o:DataItem>
-<o:DataItem Id="o45">
+<o:DataItem Id="o100">
 <a:ObjectID>FC2E2766-E958-46D5-896A-3F996F91519F</a:ObjectID>
 <a:Name>urlimagevoiture</a:Name>
 <a:Code>URLIMAGEVOITURE</a:Code>
 <a:CreationDate>1488284222</a:CreationDate>
 <a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488287911</a:ModificationDate>
+<a:ModificationDate>1488305933</a:ModificationDate>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:DataType>VA255</a:DataType>
 <a:Length>255</a:Length>
 </o:DataItem>
-<o:DataItem Id="o47">
+<o:DataItem Id="o101">
 <a:ObjectID>42110B96-9E3D-42C1-B516-D69A5EA05C0C</a:ObjectID>
 <a:Name>prixtarifvoiture</a:Name>
 <a:Code>PRIXTARIFVOITURE</a:Code>
 <a:CreationDate>1488284222</a:CreationDate>
 <a:Creator>Lai Christophe</a:Creator>
-<a:ModificationDate>1488287911</a:ModificationDate>
+<a:ModificationDate>1488305933</a:ModificationDate>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:DataType>MN</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o50">
+<o:DataItem Id="o75">
 <a:ObjectID>4B59D4BD-4414-467C-9533-2153E3594038</a:ObjectID>
 <a:Name>idpackvoyage</a:Name>
 <a:Code>IDPACKVOYAGE</a:Code>
@@ -1384,7 +2205,7 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Modifier>Lai Christophe</a:Modifier>
 <a:DataType>NO</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o52">
+<o:DataItem Id="o77">
 <a:ObjectID>745B4E65-6D3A-488C-83BB-F96D3E258386</a:ObjectID>
 <a:Name>decription</a:Name>
 <a:Code>DECRIPTION</a:Code>
@@ -1395,7 +2216,279 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:DataType>VA50</a:DataType>
 <a:Length>50</a:Length>
 </o:DataItem>
+<o:DataItem Id="o80">
+<a:ObjectID>B0C2303F-4E37-42AC-92DD-999015926BE2</a:ObjectID>
+<a:Name>idvoyage</a:Name>
+<a:Code>IDVOYAGE</a:Code>
+<a:CreationDate>1488305275</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305373</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:DataType>NO</a:DataType>
+</o:DataItem>
+<o:DataItem Id="o82">
+<a:ObjectID>07787278-7B7A-4767-90E8-A522913F1A15</a:ObjectID>
+<a:Name>datedebutvoyage</a:Name>
+<a:Code>DATEDEBUTVOYAGE</a:Code>
+<a:CreationDate>1488305275</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305373</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:DataType>D</a:DataType>
+</o:DataItem>
+<o:DataItem Id="o84">
+<a:ObjectID>6CD8B281-59D1-4309-85DD-6339C8F6CE70</a:ObjectID>
+<a:Name>datefinvoyage</a:Name>
+<a:Code>DATEFINVOYAGE</a:Code>
+<a:CreationDate>1488305275</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305373</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:DataType>D</a:DataType>
+</o:DataItem>
+<o:DataItem Id="o87">
+<a:ObjectID>38507698-770A-401C-8FF9-BCFD8D7538DE</a:ObjectID>
+<a:Name>idVoiture</a:Name>
+<a:Code>IDVOITURE</a:Code>
+<a:CreationDate>1488305540</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305633</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:DataType>NO</a:DataType>
+</o:DataItem>
+<o:DataItem Id="o89">
+<a:ObjectID>0F5B26D1-5D8D-41E5-9E41-1DBEE148EFF6</a:ObjectID>
+<a:Name>matriculevoiture</a:Name>
+<a:Code>MATRICULEVOITURE</a:Code>
+<a:CreationDate>1488305540</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305633</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:DataType>VA8</a:DataType>
+<a:Length>8</a:Length>
+</o:DataItem>
+<o:DataItem Id="o91">
+<a:ObjectID>0C43DD24-0068-40C0-98F0-A3E942939964</a:ObjectID>
+<a:Name>imagevoiture</a:Name>
+<a:Code>IMAGEVOITURE</a:Code>
+<a:CreationDate>1488305540</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305633</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:DataType>VA255</a:DataType>
+<a:Length>255</a:Length>
+</o:DataItem>
+<o:DataItem Id="o98">
+<a:ObjectID>EF4BA930-2ACF-438B-94ED-56DF747DC06F</a:ObjectID>
+<a:Name>idvoyageconfirmer</a:Name>
+<a:Code>IDVOYAGECONFIRMER</a:Code>
+<a:CreationDate>1488305753</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305798</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:DataType>NO</a:DataType>
+</o:DataItem>
+<o:DataItem Id="o93">
+<a:ObjectID>AD827085-CD22-44EF-B3F4-50BC423D948D</a:ObjectID>
+<a:Name>prixlocationvoiture</a:Name>
+<a:Code>PRIXLOCATIONVOITURE</a:Code>
+<a:CreationDate>1488305885</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305911</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:DataType>MN9</a:DataType>
+<a:Length>9</a:Length>
+</o:DataItem>
 </c:DataItems>
+<c:Associations>
+<o:Association Id="o40">
+<a:ObjectID>078369DB-BACF-4312-A84E-9F3B60C29CFD</a:ObjectID>
+<a:Name>Association_1</a:Name>
+<a:Code>ASSOCIATION_1</a:Code>
+<a:CreationDate>1488305147</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305166</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+</o:Association>
+<o:Association Id="o41">
+<a:ObjectID>A6C2B954-11E2-40F9-BA3D-DA23BFD4D16B</a:ObjectID>
+<a:Name>Association_2</a:Name>
+<a:Code>ASSOCIATION_2</a:Code>
+<a:CreationDate>1488305150</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305181</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+</o:Association>
+<o:Association Id="o43">
+<a:ObjectID>7340C6CE-5B53-410C-89D2-C6C813D827A5</a:ObjectID>
+<a:Name>Association_3</a:Name>
+<a:Code>ASSOCIATION_3</a:Code>
+<a:CreationDate>1488305388</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305397</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+</o:Association>
+<o:Association Id="o44">
+<a:ObjectID>040D2F78-7B75-411A-B1B7-D043034903BD</a:ObjectID>
+<a:Name>Association_4</a:Name>
+<a:Code>ASSOCIATION_4</a:Code>
+<a:CreationDate>1488305409</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305424</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+</o:Association>
+<o:Association Id="o47">
+<a:ObjectID>5BF13A8B-507D-4BED-B694-5C6055A19494</a:ObjectID>
+<a:Name>Association_5</a:Name>
+<a:Code>ASSOCIATION_5</a:Code>
+<a:CreationDate>1488305814</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305827</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+</o:Association>
+</c:Associations>
+<c:AssociationsLinks>
+<o:AssociationLink Id="o7">
+<a:ObjectID>83690A20-4073-4DD0-BCDA-399DF1C133FB</a:ObjectID>
+<a:CreationDate>1488305147</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305166</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:Cardinality>1,1</a:Cardinality>
+<c:Object1>
+<o:Association Ref="o40"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o39"/>
+</c:Object2>
+</o:AssociationLink>
+<o:AssociationLink Id="o10">
+<a:ObjectID>FC59A6A4-A3DB-4E48-8A51-1DDEDB7A6629</a:ObjectID>
+<a:CreationDate>1488305147</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305147</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:Cardinality>0,n</a:Cardinality>
+<c:Object1>
+<o:Association Ref="o40"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o38"/>
+</c:Object2>
+</o:AssociationLink>
+<o:AssociationLink Id="o13">
+<a:ObjectID>952F8BDF-080C-4D80-8CEA-5D7AF3DEDBF1</a:ObjectID>
+<a:CreationDate>1488305150</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305181</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:Cardinality>1,1</a:Cardinality>
+<c:Object1>
+<o:Association Ref="o41"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o39"/>
+</c:Object2>
+</o:AssociationLink>
+<o:AssociationLink Id="o17">
+<a:ObjectID>77955B13-EF09-42AD-AFD9-33EF055523C4</a:ObjectID>
+<a:CreationDate>1488305388</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305397</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:Cardinality>1,1</a:Cardinality>
+<c:Object1>
+<o:Association Ref="o43"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o42"/>
+</c:Object2>
+</o:AssociationLink>
+<o:AssociationLink Id="o20">
+<a:ObjectID>43D0B87B-4150-4C18-BD9E-10D1F7B80922</a:ObjectID>
+<a:CreationDate>1488305388</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305388</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:Cardinality>0,n</a:Cardinality>
+<c:Object1>
+<o:Association Ref="o43"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o37"/>
+</c:Object2>
+</o:AssociationLink>
+<o:AssociationLink Id="o23">
+<a:ObjectID>B5B0D4FF-B539-4507-9189-4DB81B2D4E50</a:ObjectID>
+<a:CreationDate>1488305409</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305409</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:Cardinality>0,n</a:Cardinality>
+<c:Object1>
+<o:Association Ref="o44"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o39"/>
+</c:Object2>
+</o:AssociationLink>
+<o:AssociationLink Id="o25">
+<a:ObjectID>2829FE7F-D0BD-4E56-B42A-8BC7D75645E7</a:ObjectID>
+<a:CreationDate>1488305409</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305424</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:Cardinality>1,1</a:Cardinality>
+<c:Object1>
+<o:Association Ref="o44"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o42"/>
+</c:Object2>
+</o:AssociationLink>
+<o:AssociationLink Id="o28">
+<a:ObjectID>FE8CC5B0-4CB0-47B9-82E6-E6C1C898C710</a:ObjectID>
+<a:CreationDate>1488305814</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305814</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:Cardinality>0,n</a:Cardinality>
+<c:Object1>
+<o:Association Ref="o47"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o42"/>
+</c:Object2>
+</o:AssociationLink>
+<o:AssociationLink Id="o31">
+<a:ObjectID>7491086C-5955-4F4C-BA94-2D9B3B93163E</a:ObjectID>
+<a:CreationDate>1488305814</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488305827</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:Cardinality>1,1</a:Cardinality>
+<c:Object1>
+<o:Association Ref="o47"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o46"/>
+</c:Object2>
+</o:AssociationLink>
+<o:AssociationLink Id="o34">
+<a:ObjectID>FB3AABFF-98A6-4937-A027-0AED3C7D06A6</a:ObjectID>
+<a:CreationDate>1488306053</a:CreationDate>
+<a:Creator>Lai Christophe</a:Creator>
+<a:ModificationDate>1488306053</a:ModificationDate>
+<a:Modifier>Lai Christophe</a:Modifier>
+<a:Cardinality>0,n</a:Cardinality>
+<c:Object1>
+<o:Association Ref="o41"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o45"/>
+</c:Object2>
+</o:AssociationLink>
+</c:AssociationsLinks>
 </o:Model>
 </c:Children>
 </o:RootObject>
