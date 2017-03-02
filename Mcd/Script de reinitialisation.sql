@@ -4,7 +4,7 @@
 
 -- Dumped from database version 9.4.5
 -- Dumped by pg_dump version 9.4.5
--- Started on 2017-03-01 21:19:10
+-- Started on 2017-03-02 13:29:02
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -13,26 +13,55 @@ SET standard_conforming_strings = on;
 SET check_function_bodies = false;
 SET client_min_messages = warning;
 
-DROP DATABASE touroperator;
---
--- TOC entry 2082 (class 1262 OID 24576)
--- Name: touroperator; Type: DATABASE; Schema: -; Owner: postgres
---
+SET search_path = public, pg_catalog;
 
-CREATE DATABASE touroperator WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'French_France.1252' LC_CTYPE = 'French_France.1252';
-
-
-ALTER DATABASE touroperator OWNER TO postgres;
-
-\connect touroperator
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET client_encoding = 'SQL_ASCII';
-SET standard_conforming_strings = on;
-SET check_function_bodies = false;
-SET client_min_messages = warning;
-
+ALTER TABLE ONLY public.voyage_confirmer DROP CONSTRAINT fk_voyage_c_associati_voyage;
+ALTER TABLE ONLY public.voyage DROP CONSTRAINT fk_voyage_associati_pack_voy;
+ALTER TABLE ONLY public.voyage DROP CONSTRAINT fk_voyage_associati_client;
+ALTER TABLE ONLY public.pack_voyage DROP CONSTRAINT fk_pack_voy_associati_voiture;
+ALTER TABLE ONLY public.pack_voyage DROP CONSTRAINT fk_pack_voy_associati_tarif_vo;
+DROP INDEX public.voyage_pk;
+DROP INDEX public.voyage_confirmer_pk;
+DROP INDEX public.voiture_pk;
+DROP INDEX public.tarif_voyage_pk;
+DROP INDEX public.super_admin_pk;
+DROP INDEX public.pack_voyage_pk;
+DROP INDEX public.client_pk;
+DROP INDEX public.association_5_fk;
+DROP INDEX public.association_4_fk;
+DROP INDEX public.association_3_fk;
+DROP INDEX public.association_2_fk;
+DROP INDEX public.association_1_fk;
+ALTER TABLE ONLY public.voyage_confirmer DROP CONSTRAINT pk_voyage_confirmer;
+ALTER TABLE ONLY public.voyage DROP CONSTRAINT pk_voyage;
+ALTER TABLE ONLY public.voiture DROP CONSTRAINT pk_voiture;
+ALTER TABLE ONLY public.tarif_voyage DROP CONSTRAINT pk_tarif_voyage;
+ALTER TABLE ONLY public.super_admin DROP CONSTRAINT pk_super_admin;
+ALTER TABLE ONLY public.pack_voyage DROP CONSTRAINT pk_pack_voyage;
+ALTER TABLE ONLY public.client DROP CONSTRAINT pk_client;
+ALTER TABLE public.voyage_confirmer ALTER COLUMN idvoyageconfirmer DROP DEFAULT;
+ALTER TABLE public.voyage ALTER COLUMN idvoyage DROP DEFAULT;
+ALTER TABLE public.voiture ALTER COLUMN idvoiture DROP DEFAULT;
+ALTER TABLE public.tarif_voyage ALTER COLUMN idtarifvoyage DROP DEFAULT;
+ALTER TABLE public.super_admin ALTER COLUMN idsuperadmin DROP DEFAULT;
+ALTER TABLE public.pack_voyage ALTER COLUMN idpackvoyage DROP DEFAULT;
+ALTER TABLE public.client ALTER COLUMN idclient DROP DEFAULT;
+DROP SEQUENCE public.voyage_idvoyage_seq;
+DROP SEQUENCE public.voyage_confirmer_idvoyageconfirmer_seq;
+DROP TABLE public.voyage_confirmer;
+DROP TABLE public.voyage;
+DROP SEQUENCE public.voiture_idvoiture_seq;
+DROP TABLE public.voiture;
+DROP SEQUENCE public.tarif_voyage_idtarifvoyage_seq;
+DROP TABLE public.tarif_voyage;
+DROP SEQUENCE public.super_admin_idsuperadmin_seq;
+DROP TABLE public.super_admin;
+DROP SEQUENCE public.pack_voyage_idpackvoyage_seq;
+DROP TABLE public.pack_voyage;
+DROP SEQUENCE public.client_idclient_seq;
+DROP TABLE public.client;
+DROP EXTENSION plpgsql;
+DROP SCHEMA public;
 --
 -- TOC entry 5 (class 2615 OID 2200)
 -- Name: public; Type: SCHEMA; Schema: -; Owner: postgres
@@ -44,7 +73,7 @@ CREATE SCHEMA public;
 ALTER SCHEMA public OWNER TO postgres;
 
 --
--- TOC entry 2083 (class 0 OID 0)
+-- TOC entry 2069 (class 0 OID 0)
 -- Dependencies: 5
 -- Name: SCHEMA public; Type: COMMENT; Schema: -; Owner: postgres
 --
@@ -61,7 +90,7 @@ CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
 
 
 --
--- TOC entry 2085 (class 0 OID 0)
+-- TOC entry 2071 (class 0 OID 0)
 -- Dependencies: 186
 -- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
 --
@@ -106,7 +135,7 @@ CREATE SEQUENCE client_idclient_seq
 ALTER TABLE client_idclient_seq OWNER TO postgres;
 
 --
--- TOC entry 2086 (class 0 OID 0)
+-- TOC entry 2072 (class 0 OID 0)
 -- Dependencies: 172
 -- Name: client_idclient_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -145,7 +174,7 @@ CREATE SEQUENCE pack_voyage_idpackvoyage_seq
 ALTER TABLE pack_voyage_idpackvoyage_seq OWNER TO postgres;
 
 --
--- TOC entry 2087 (class 0 OID 0)
+-- TOC entry 2073 (class 0 OID 0)
 -- Dependencies: 174
 -- Name: pack_voyage_idpackvoyage_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -184,7 +213,7 @@ CREATE SEQUENCE super_admin_idsuperadmin_seq
 ALTER TABLE super_admin_idsuperadmin_seq OWNER TO postgres;
 
 --
--- TOC entry 2088 (class 0 OID 0)
+-- TOC entry 2074 (class 0 OID 0)
 -- Dependencies: 176
 -- Name: super_admin_idsuperadmin_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -222,7 +251,7 @@ CREATE SEQUENCE tarif_voyage_idtarifvoyage_seq
 ALTER TABLE tarif_voyage_idtarifvoyage_seq OWNER TO postgres;
 
 --
--- TOC entry 2089 (class 0 OID 0)
+-- TOC entry 2075 (class 0 OID 0)
 -- Dependencies: 178
 -- Name: tarif_voyage_idtarifvoyage_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -262,7 +291,7 @@ CREATE SEQUENCE voiture_idvoiture_seq
 ALTER TABLE voiture_idvoiture_seq OWNER TO postgres;
 
 --
--- TOC entry 2090 (class 0 OID 0)
+-- TOC entry 2076 (class 0 OID 0)
 -- Dependencies: 180
 -- Name: voiture_idvoiture_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -315,7 +344,7 @@ CREATE SEQUENCE voyage_confirmer_idvoyageconfirmer_seq
 ALTER TABLE voyage_confirmer_idvoyageconfirmer_seq OWNER TO postgres;
 
 --
--- TOC entry 2091 (class 0 OID 0)
+-- TOC entry 2077 (class 0 OID 0)
 -- Dependencies: 184
 -- Name: voyage_confirmer_idvoyageconfirmer_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -339,7 +368,7 @@ CREATE SEQUENCE voyage_idvoyage_seq
 ALTER TABLE voyage_idvoyage_seq OWNER TO postgres;
 
 --
--- TOC entry 2092 (class 0 OID 0)
+-- TOC entry 2078 (class 0 OID 0)
 -- Dependencies: 182
 -- Name: voyage_idvoyage_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -401,138 +430,6 @@ ALTER TABLE ONLY voyage ALTER COLUMN idvoyage SET DEFAULT nextval('voyage_idvoya
 --
 
 ALTER TABLE ONLY voyage_confirmer ALTER COLUMN idvoyageconfirmer SET DEFAULT nextval('voyage_confirmer_idvoyageconfirmer_seq'::regclass);
-
-
---
--- TOC entry 2065 (class 0 OID 24579)
--- Dependencies: 173
--- Data for Name: client; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO client (idclient, nomclient, emailclient, passclient) VALUES (1, 'Christophe', 'lai_christophe@hotmail.com', 'root');
-INSERT INTO client (idclient, nomclient, emailclient, passclient) VALUES (2, 'Alexandra', 'alexandralai@yahoo.fr', 'root');
-
-
---
--- TOC entry 2093 (class 0 OID 0)
--- Dependencies: 172
--- Name: client_idclient_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('client_idclient_seq', 2, true);
-
-
---
--- TOC entry 2067 (class 0 OID 24588)
--- Dependencies: 175
--- Data for Name: pack_voyage; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO pack_voyage (idpackvoyage, idvoiture, idtarifvoyage, decription) VALUES (3, 1, 1, 'tana tamatave en starex');
-INSERT INTO pack_voyage (idpackvoyage, idvoiture, idtarifvoyage, decription) VALUES (4, 2, 2, 'tana tamatave en patrole');
-
-
---
--- TOC entry 2094 (class 0 OID 0)
--- Dependencies: 174
--- Name: pack_voyage_idpackvoyage_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('pack_voyage_idpackvoyage_seq', 5, true);
-
-
---
--- TOC entry 2069 (class 0 OID 24599)
--- Dependencies: 177
--- Data for Name: super_admin; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO super_admin (idsuperadmin, loginsuperadmin, passsuperadmin, niveauaccreditation) VALUES (1, 'root', 'root', NULL);
-
-
---
--- TOC entry 2095 (class 0 OID 0)
--- Dependencies: 176
--- Name: super_admin_idsuperadmin_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('super_admin_idsuperadmin_seq', 1, true);
-
-
---
--- TOC entry 2071 (class 0 OID 24608)
--- Dependencies: 179
--- Data for Name: tarif_voyage; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO tarif_voyage (idtarifvoyage, trajetvoyage, prixvoyage) VALUES (1, 'tana - tamatave', '300 000,00 €');
-INSERT INTO tarif_voyage (idtarifvoyage, trajetvoyage, prixvoyage) VALUES (2, 'tana - tulear', '200 000,00 €');
-
-
---
--- TOC entry 2096 (class 0 OID 0)
--- Dependencies: 178
--- Name: tarif_voyage_idtarifvoyage_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('tarif_voyage_idtarifvoyage_seq', 2, true);
-
-
---
--- TOC entry 2073 (class 0 OID 24617)
--- Dependencies: 181
--- Data for Name: voiture; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO voiture (idvoiture, matriculevoiture, imagevoiture, prixlocationvoiture, modelvoiture) VALUES (2, '4562 Tab', NULL, '150 000,00 €', 'Patrol');
-INSERT INTO voiture (idvoiture, matriculevoiture, imagevoiture, prixlocationvoiture, modelvoiture) VALUES (3, '4895 Tam', NULL, '250 000,00 €', 'Navara');
-INSERT INTO voiture (idvoiture, matriculevoiture, imagevoiture, prixlocationvoiture, modelvoiture) VALUES (1, '8731 Ac', NULL, '200 000,00 €', 'Grand Starex ');
-
-
---
--- TOC entry 2097 (class 0 OID 0)
--- Dependencies: 180
--- Name: voiture_idvoiture_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('voiture_idvoiture_seq', 3, true);
-
-
---
--- TOC entry 2075 (class 0 OID 24626)
--- Dependencies: 183
--- Data for Name: voyage; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO voyage (idvoyage, idpackvoyage, idclient, datedebutvoyage, datefinvoyage) VALUES (3, 3, 1, '2017-02-28', '2017-03-03');
-INSERT INTO voyage (idvoyage, idpackvoyage, idclient, datedebutvoyage, datefinvoyage) VALUES (4, 4, 2, '2017-02-28', '2017-02-03');
-
-
---
--- TOC entry 2077 (class 0 OID 24637)
--- Dependencies: 185
--- Data for Name: voyage_confirmer; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO voyage_confirmer (idvoyageconfirmer, idvoyage) VALUES (1, 4);
-
-
---
--- TOC entry 2098 (class 0 OID 0)
--- Dependencies: 184
--- Name: voyage_confirmer_idvoyageconfirmer_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('voyage_confirmer_idvoyageconfirmer_seq', 1, true);
-
-
---
--- TOC entry 2099 (class 0 OID 0)
--- Dependencies: 182
--- Name: voyage_idvoyage_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('voyage_idvoyage_seq', 4, true);
 
 
 --
@@ -740,7 +637,7 @@ ALTER TABLE ONLY voyage_confirmer
 
 
 --
--- TOC entry 2084 (class 0 OID 0)
+-- TOC entry 2070 (class 0 OID 0)
 -- Dependencies: 5
 -- Name: public; Type: ACL; Schema: -; Owner: postgres
 --
@@ -751,7 +648,7 @@ GRANT ALL ON SCHEMA public TO postgres;
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
--- Completed on 2017-03-01 21:19:11
+-- Completed on 2017-03-02 13:29:03
 
 --
 -- PostgreSQL database dump complete
